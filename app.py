@@ -69,6 +69,7 @@ def predict():
 
 if __name__ == "__main__":
     # run the app locally on the given port
-    app.run(host='127.0.0.1', port=8000)
+    #app.run(host='127.0.0.1', port=8000)
+    app.run()
 # optional if we want to run in debugging mode
-app.run(debug=True)
+#app.run(debug=True)
