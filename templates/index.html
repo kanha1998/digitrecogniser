@@ -19,12 +19,7 @@
 
     <div class="container">
       <div class="header clearfix">
-        <nav>
-          <ul class="nav nav-pills pull-right">
-            <li role="presentation" class="active"><a href="#">Home</a></li>
-            <li role="presentation"><a href="http://www.python36.com/">About</a></li>
-          </ul>
-        </nav>
+      
         <h3 class="text-muted">MNIST Handwritten CNN</h3>
       </div>
 
@@ -35,12 +30,14 @@
 		  <input type="range" min="10" max="50" value="15" id="myRange">
 		  <p>Value: <span id="sliderValue"></span></p>
 		</div>
-		<canvas
-          id="canvas"
-          width="280"
-          height="280"
-          style="border:2px solid; float: left; border-radius: 5px; cursor: crosshair;"
-        ></canvas>
+	<div class="canvasDiv">
+	        <canvas id="canvas" width="280" height="280"></canvas>
+	        <br>
+	        <p style="text-align:center;">
+		        <a class="btn btn-success myButton" href="#" role="button">Predict</a>
+		        <a class="btn btn-primary" href="#" id="clearButton" role="button">Clear</a>
+	    	</p>
+	      </div>
 <p id="result" class="text-center text-success"></p>
 <a href="#" class="btn btn-success btn-block p-2"  id="predictButton">
             Predict
@@ -58,9 +55,7 @@
       	<p id="result">Get your prediction here!!!</p>
       </div>
 
-      <footer class="footer">
-        <p>&copy; 2018, python36.com</p>
-      </footer>
+    
 
     </div> <!-- /container -->
 
