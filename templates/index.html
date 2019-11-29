@@ -35,13 +35,22 @@
 		  <input type="range" min="10" max="50" value="15" id="myRange">
 		  <p>Value: <span id="sliderValue"></span></p>
 		</div>
-		<div class="canvasDiv">
-	        <canvas id="canvas" width="280" height="280"></canvas>
-	        <br>
-	        <p style="text-align:center;">
-		        <a class="btn btn-success myButton" href="#" role="button">Predict</a>
-		        <a class="btn btn-primary" href="#" id="clearButton" role="button">Clear</a>
-	    	</p>
+		<canvas
+          id="canvas"
+          width="280"
+          height="280"
+          style="border:2px solid; float: left; border-radius: 5px; cursor: crosshair;"
+        ></canvas>
+<p id="result" class="text-center text-success"></p>
+<a href="#" class="btn btn-success btn-block p-2"  id="predictButton">
+            Predict
+</a>
+<input
+        type="button"
+        class="btn btn-block btn-secondary p-2"
+        id="clearButton"
+        value="Clear"
+ />
         </div>
       </div>
 
